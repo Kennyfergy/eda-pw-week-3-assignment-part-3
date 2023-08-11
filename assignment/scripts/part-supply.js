@@ -42,16 +42,13 @@ console.log("6. Showing supplyChanges...");
 let partsRemoved = 6;
 
 for (let i = 0; i < supplyChanges.length; i++) {
-  console.log("Array Value", supplyChanges[i]);
-  if (supplyChanges[i] > "0") {
-    console.log(`Added ${partsAdded} parts.`);
-  } //end if
-  if (supplyChanges[i] === "0") {
-    console.log("No Change");
-  } //end if
-  if (supplyChanges[i] < "0") {
-    console.log(`Removed ${partsRemoved} parts.`);
-  } //end if
+  if (supplyChanges[i] > 0) {
+    console.log(`Added ${supplyChanges[i]} parts.`);
+  } else if (supplyChanges[i] === 0) {
+    console.log("No change.");
+  } else {
+    console.log(`Removed ${supplyChanges[i]} parts.`);
+  }
 }
 
 // STRETCH GOALS
