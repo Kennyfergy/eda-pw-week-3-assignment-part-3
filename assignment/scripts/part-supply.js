@@ -39,7 +39,6 @@ console.log(supplyChanges[5]);
 //    - if the value is negative, format the log as 'Removed x parts.'
 console.log("6. Showing supplyChanges...");
 //made variable for parts removed
-let partsRemoved = 6;
 
 for (let i = 0; i < supplyChanges.length; i++) {
   if (supplyChanges[i] > 0) {
